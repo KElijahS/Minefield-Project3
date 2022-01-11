@@ -1,4 +1,4 @@
-import "./styles.css";
+import "styles.css";
 import React from "react";
 import { RadialBarChart, RadialBar, Legend } from "recharts";
 
@@ -47,7 +47,7 @@ const style = {
   lineHeight: "24px"
 };
 
-export default function App() {
+function RadialGraph() {
   return (
     <RadialBarChart
       width={500}
@@ -77,3 +77,4 @@ export default function App() {
     </RadialBarChart>
   );
 }
+RadialGraph();
