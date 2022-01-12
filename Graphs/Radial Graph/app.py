@@ -1,18 +1,15 @@
-import app;
-import js2py
-from flask import Flask, render_template, redirect
 
-#app = flask.Flask(__name__, static_url_path='',
-#            static_folder='static',
-#            template_folder='templates')
+from flask import Flask, render_template
 
-# Maybe use instead
 app = Flask(__name__)
 
+# Set up a home route
 @app.route('/')
 def home():
-    radial = js2py.run_file("radial_graph.js")
-    return render_template("index.html", radial)
+    values = [64,3,10,3]
+    labels = ['Male','Female','Male Group','Female Group']
+    return render_template("index.html", labels=labels, values=values)
 
+# Boilerplatex
 if __name__ == '__main__':
     app.run(host="localhost", port=8000, debug=True)
