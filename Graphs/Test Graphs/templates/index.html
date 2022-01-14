@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender in Popular Music 1941-2020</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class= "container">
+        <div class="container-fluid bg-light p-5">
+            <h1>Gender in Popular Music</h1>
+            <p>Data based on Billboard Year End Charts from 1941 to 2020</p>
+        </div>
+
+        <br>
+
+        <div class= "container">
+            <div class= "row">
+                <div class= "col-md-6">
+                    <h2>Year by Year</h2>
+                    <h5><h5>
+                        <p>}</p>   
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+            </div>
+
+            <br>
+
+<!--1941 Pie Chart-->
+            <div class= "row">
+                <div class= "col-md-3">
+                    <h2>1941</h2>
+                     <!--Doughnut Chart-->
+                    <div id="1941PieChart"></div>
+                    <canvas id="myChart" width="300" height="300"></canvas>
+                    <script>
+                        var ctx = document.getElementById("myChart");
+                        var myChart = new Chart(ctx, 
+                        {
+                            type: 'pie',
+                            data: 
+                            {
+                                labels: {{ labels | safe }},
+                                datasets: 
+                                [
+                                    {
+                                        label: 'Genders for Top 100 (1941)',
+                                        data: {{ values | safe }},
+                                        backgroundColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.5)',
+                                            'rgba(252, 0, 114, 0.25)',
+                                            'rgba(0, 221, 255, 0.25)',
+                                            'rgba(252, 221, 193, .5)',
+                                            'rgba(200, 252, 194, .5)'
+                                        ], 
+                                        borderColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.75)',
+                                            'rgba(252, 0, 114, 0.5)',
+                                            'rgba(0, 221, 255, 1)',
+                                            'rgba(252, 221, 193, 1)',
+                                            'rgba(200, 252, 194, 1)'
+                                        ],
+                                    borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: 
+                            {
+                                //cutoutPercentage: 40,
+                                responsive: false,
+                            }
+                        });
+                    </script>
+                </div>
+
+<!--2020 Pie Chart-->
+                <div class= "col-md-3">
+                    <h2>2020</h2>
+                    <div id="2020PieChart"></div>
+                    <canvas id="pieChart" width="300" height="300"></canvas>
+                    <script>
+                        var ctx = document.getElementById("pieChart");
+                        var pieChart = new Chart(ctx, 
+                        {
+                            type: 'pie',
+                            data: 
+                            {
+                                labels: {{ labels | safe }},
+                                datasets: 
+                                [
+                                    {
+                                        label: 'Genders for Top 100 (2020)',
+                                        data: {{ values2 | safe }},
+                                        backgroundColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.5)',
+                                            'rgba(252, 0, 114, 0.25)',
+                                            'rgba(0, 221, 255, 0.25)',
+                                            'rgba(252, 221, 193, .5)',
+                                            'rgba(200, 252, 194, .5)'
+                                        ], 
+                                        borderColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.75)',
+                                            'rgba(252, 0, 114, 0.5)',
+                                            'rgba(0, 221, 255, 1)',
+                                            'rgba(252, 221, 193, 1)',
+                                            'rgba(200, 252, 194, 1)'
+                                        ],
+                                    borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: 
+                            {
+                                //cutoutPercentage: 40,
+                                responsive: false,
+                            }
+                        });
+                    </script>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Current Top Artist</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a class="btn btn-primary" href="/scrape" role="button">Scrape New Data</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+            </div>
+
+            <br>
+
+<!--Area Graph-->
+            <div class= "row">
+                <div class= "col-md-12">
+                    <h2>Area Graph</h2>
+                    <div id="AreaLineChart"></div>
+                    <canvas id="myChart2" width="400" height="200"></canvas>
+                    <script>
+                        var ctx = document.getElementById("myChart2");
+                        var myChart2 = new Chart(ctx,
+                        {
+                            type: 'line',
+                            data:
+                            {
+                                labels: [1941,1945,1950,1955,1960,1965,1970,1975,1980,1985,1990,1995,2000,2005,2010,2015,2020],
+                                //{{ labels2 | safe }},
+                                datasets: 
+                                [
+                                    {
+                                        label: 'Male',
+                                        data: {{ dataMale | safe }},
+                                        borderColor: 'rgba(13, 0, 252, .75)',
+                                        backgroundColor: 'rgba(13, 0, 252, 0.5)',
+                                        fill: 'origin'
+                                    },
+                                    {
+                                        label: 'Female',
+                                        data: {{ dataFemale | safe }},
+                                        borderColor: 'rgba(252, 0, 114, 0.5)',
+                                        backgroundColor: 'rgba(252, 0, 114, 0.25)',
+                                        fill: 'origin'
+                                    },
+                                    {
+                                        label: 'Male Group',
+                                        data: {{ dataMaleG | safe }},
+                                        borderColor: 'rgba(0, 221, 255, 1)',
+                                        backgroundColor: 'rgba(0, 221, 255, 0.25)',
+                                        fill: 'origin'
+                                    },
+                                    {
+                                        label: 'Female Group',
+                                        data: {{ dataFemaleG | safe }},
+                                        borderColor: 'rgba(252, 221, 193, 1)',
+                                        backgroundColor: 'rgba(252, 221, 193, .5)',
+                                        fill: 'origin'
+                                    },
+                                    {
+                                        label: 'Mixed Group',
+                                        data: {{ dataMixed | safe }},
+                                        borderColor: 'rgba(200, 252, 194, 1)',
+                                        backgroundColor: 'rgba(200, 252, 194, .5)',
+                                        fill: 'origin'
+                                    }
+                                ]
+                            },
+                            options: 
+                            {
+                                scales: 
+                                {
+                                    y: 
+                                    {
+                                        stacked: true
+                                    }
+                                },
+                                plugins: 
+                                {
+                                    filler: 
+                                    {
+                                        propagate: false
+                                    },
+                                    'samples-filler-analyser': 
+                                    {
+                                        target: 'chart-analyser'
+                                    }
+                                },
+                                interaction: 
+                                {
+                                    intersect: false,
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>   
+</body>
+</html>
