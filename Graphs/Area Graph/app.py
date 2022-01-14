@@ -6,8 +6,9 @@ app = Flask(__name__)
 # Set up a home route
 @app.route('/')
 def home():
-    values = [64,3,10,3]
-    labels = ['Male','Female','Male Group','Female Group']
+    values = [64,3,10,3,0]
+    values2 = [67,17,2,1,13]
+    labels = ['Male','Female','Male Group','Female Group','Mixed Group']
     labels2 = [1941,1945,1950,1955,1960,1965,1970,1975,1980,1985,1990,1995,2000,2005,2010,2015,2020]
     dataMale = [64,64,14,16,63,32,27,37,47,34,35,22,33,39,42,49,67]
     dataFemale = [3,6,5,5,14,11,6,14,15,20,26,29,26,21,26,25,17]
@@ -15,9 +16,7 @@ def home():
     dataFemaleG = [3,1,0,3,2,3,1,2,0,2,6,7,5,1,0,1,1]
     dataMixed = [0,5,5,1,4,7,14,8,11,12,7,10,14,16,20,16,13]
 
-    return render_template("index.html", labels=labels, values=values, labels2=labels2, dataMale=dataMale, dataFemale=dataFemale, dataMaleG=dataMaleG, dataFemaleG= dataFemaleG, dataMixed=dataMixed)
-
-
+    return render_template("index.html", labels=labels, values=values, labels2=labels2, dataMale=dataMale, dataFemale=dataFemale, dataMaleG=dataMaleG, dataFemaleG= dataFemaleG, dataMixed=dataMixed, values2=values2)
 
 # Boilerplatex
 if __name__ == '__main__':

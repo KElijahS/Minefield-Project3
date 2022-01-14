@@ -42,13 +42,13 @@
 
             <br>
 
-
+<!--1941 Pie Chart-->
             <div class= "row">
                 <div class= "col-md-3">
                     <h2>1941</h2>
                      <!--Doughnut Chart-->
-                    <div id="RadialBarChart"></div>
-                    <canvas id="myChart" width="200" height="200"></canvas>
+                    <div id="1941PieChart"></div>
+                    <canvas id="myChart" width="300" height="300"></canvas>
                     <script>
                         var ctx = document.getElementById("myChart");
                         var myChart = new Chart(ctx, 
@@ -64,17 +64,19 @@
                                         data: {{ values | safe }},
                                         backgroundColor: 
                                         [
-                                            'rgba(255, 99, 132, 0.5)',
-                                            'rgba(54, 162, 235, 0.2)',
-                                            'rgba(255, 206, 86, 0.2)',
-                                            'rgba(75, 192, 192, 0.2)'
+                                            'rgba(13, 0, 252, 0.5)',
+                                            'rgba(252, 0, 114, 0.25)',
+                                            'rgba(0, 221, 255, 0.25)',
+                                            'rgba(252, 221, 193, .5)',
+                                            'rgba(200, 252, 194, .5)'
                                         ], 
                                         borderColor: 
                                         [
-                                            'rgba(255,99,132,1)',
-                                            'rgba(54, 162, 235, 1)',
-                                            'rgba(255, 206, 86, 1)',
-                                            'rgba(75, 192, 192, 1)'
+                                            'rgba(13, 0, 252, 0.75)',
+                                            'rgba(252, 0, 114, 0.5)',
+                                            'rgba(0, 221, 255, 1)',
+                                            'rgba(252, 221, 193, 1)',
+                                            'rgba(200, 252, 194, 1)'
                                         ],
                                     borderWidth: 1
                                     }
@@ -89,10 +91,51 @@
                     </script>
                 </div>
 
-
+<!--2020 Pie Chart-->
                 <div class= "col-md-3">
                     <h2>2020</h2>
-                    
+                    <div id="2020PieChart"></div>
+                    <canvas id="pieChart" width="300" height="300"></canvas>
+                    <script>
+                        var ctx = document.getElementById("pieChart");
+                        var pieChart = new Chart(ctx, 
+                        {
+                            type: 'pie',
+                            data: 
+                            {
+                                labels: {{ labels | safe }},
+                                datasets: 
+                                [
+                                    {
+                                        label: 'Genders for Top 100 (2020)',
+                                        data: {{ values2 | safe }},
+                                        backgroundColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.5)',
+                                            'rgba(252, 0, 114, 0.25)',
+                                            'rgba(0, 221, 255, 0.25)',
+                                            'rgba(252, 221, 193, .5)',
+                                            'rgba(200, 252, 194, .5)'
+                                        ], 
+                                        borderColor: 
+                                        [
+                                            'rgba(13, 0, 252, 0.75)',
+                                            'rgba(252, 0, 114, 0.5)',
+                                            'rgba(0, 221, 255, 1)',
+                                            'rgba(252, 221, 193, 1)',
+                                            'rgba(200, 252, 194, 1)'
+                                        ],
+                                    borderWidth: 1
+                                    }
+                                ]
+                            },
+                            options: 
+                            {
+                                //cutoutPercentage: 40,
+                                responsive: false,
+                            }
+                        });
+                    </script>
                 </div>
 
                 <div class="card" style="width: 18rem;">
@@ -116,6 +159,7 @@
 
             <br>
 
+<!--Area Graph-->
             <div class= "row">
                 <div class= "col-md-12">
                     <h2>Area Graph</h2>
