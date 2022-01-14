@@ -15,12 +15,14 @@ def scrape_song():
 
     song = soup.find("a", class_="c-title__link lrv-a-unstyle-link")
     song = song.text
+    artist = soup.find("p", class_="c-tagline  a-font-primary-l a-font-primary-m@mobile-max lrv-u-color-black u-color-white@mobile-max lrv-u-margin-tb-00 lrv-u-padding-t-025 lrv-u-margin-r-150")
+    artist = artist.text
     image_path = soup.find_all('img')[4]["src"]
     artist_img = url + image_path
 
     song_data = {
         "artist_img": artist_img,
-        #"artist": artist,
+        "artist": artist,
         "song": song
     }
 
