@@ -11,7 +11,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <!--Background not working-->
 <!--Link to CSS file-->
-    <link rel="stylesheet" href="styles.css">
+<!--<link rel="stylesheet" href="styles.css">-->    
+
+<style>
+    body {
+        background-image: url('https://w7.pngwing.com/pngs/447/505/png-transparent-sound-wave-line-black-and-white-angle-point-pattern-sound-wave-curve-texture-white-flag.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: 100% 100%;
+    }
+</style>
 
 </head>
 <body>
@@ -25,7 +34,7 @@
 
         <div class= "container">
             <div class= "row">
-                <div class= "col-md-6">
+                <div class= "col-md-8">
                     <h2>Year by Year</h2>
                     <h5><h5>
                         <p>}</p>   
@@ -43,10 +52,12 @@
             </div>
 
             <br>
+            <br>
+            <br>
 
 <!--1941 Pie Chart-->
             <div class= "row">
-                <div class= "col-md-3">
+                <div class= "col-md-4">
                     <h2>1941</h2>
                      <!--Doughnut Chart-->
                     <div id="1941PieChart"></div>
@@ -94,7 +105,7 @@
                 </div>
 
 <!--2020 Pie Chart-->
-                <div class= "col-md-3">
+                <div class= "col-md-4">
                     <h2>2020</h2>
                     <div id="2020PieChart"></div>
                     <canvas id="pieChart" width="300" height="300"></canvas>
@@ -141,22 +152,27 @@
                 </div>
 <!--Top Artist Scrape Button-->
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Current Top Artist</h5>
-                      <img src="{{ topArtist.artist_img }}" alt="MariahCarey">
+                      <img src="https://charts-static.billboard.com/img/2021/10/adele-000-easy-on-me-zy9-180x180.jpg" alt="MariahCarey">
+                      <!--<img src="{{ topArtist.artist_img }}" alt="MariahCarey">-->
                     </div>
                     <ul class="list-group list-group-flush">
-                      <!--<li class="list-group-item">Artist Name</li>-->
-                      <li class="list-group-item"> Song: {{ topArtist.song }} </li>
+                        <li class="list-group-item">Artist Name: Adele</li>  
+                        <!--<li class="list-group-item">Artist Name</li>-->
+                        <li class="list-group-item"> Song: Easy On Me </li>
+                        <!--<li class="list-group-item"> Song: {{ topArtist.song }} </li>-->
                     </ul>
                     <div class="card-body">
                         <a class="btn btn-primary" href="/scrape" role="button">Top Artist</a>
-                        <a href="#" class="card-link">Card link</a>
+                        <a href="https://www.billboard.com/charts/hot-100/" class="card-link">Top 100 Page</a>
                     </div>
                   </div>
             </div>
 
+            <br>
+            <br>
+            <br>
             <br>
 
 <!--Area Graph-->
