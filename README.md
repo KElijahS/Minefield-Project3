@@ -31,6 +31,11 @@ We scraped the data from the website and cleaned the data using Pandas in juypte
 
 Once the data was cleaned we began working on the HTML code to create the website.
 
+![HTML code](https://user-images.githubusercontent.com/90288887/149629288-88eebd7b-75e1-4e36-9cc2-3b84405407ed.jpg)
+
+
+
+![HTML](https://user-images.githubusercontent.com/90288887/149629294-427f7fc8-cc14-44d6-bdcf-bac54521c05d.jpg)
 
 
 
