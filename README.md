@@ -61,7 +61,9 @@ Once our charts were completed we began working on completing our website.
 
 
 
-####Problems
+Some Problems
+
+
 We have our data in a database, but we had a lot of trouble getting it to call correctly, so in order to build the graphs, we entered the data manually. We have not gotten it to run fully with the database. The other big stumbling block was the scrape button. The code works in jupiter notebook sometimes, for some particular things, but it would not run through the scrape.py and the flask. We got a forbidden message one of the times that we scraped, so we are unsure if it was us or the website security.
 
 
