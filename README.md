@@ -2,7 +2,7 @@
 We chose to study the data provided in the Billboard Top 100 Charts from years 1941-2020 to compare the “Top 100 Songs of Each Decade” according to Billboard Magazine by Gender.
 
 ### History
-Billboard Magazine was founded in 1864 by William H. Donaldson and James H. Hennegan. The first issue of billboard magazine was launched in 1894. As time progressed, a chart called “First Hits Chart”  was created in July of 1940. The billboard  top 100 as we know it today showed up in 1956 and eventually became digital in 1995. ![image](https://user-images.githubusercontent.com/90288887/149623774-4b8e2b92-3594-45b6-bb23-50afcb2e499b.png)
+Billboard Magazine was founded in 1864 by William H. Donaldson and James H. Hennegan. The first issue of billboard magazine was launched in 1894. As time progressed, a chart called “First Hits Chart”  was created in July of 1940. The billboard  top 100 as we know it today showed up in 1958 and eventually became digital in 1995. ![image](https://user-images.githubusercontent.com/90288887/149623774-4b8e2b92-3594-45b6-bb23-50afcb2e499b.png)
 
 
 
@@ -13,7 +13,24 @@ We scraped data from the two websites http://billboardtop100of.com/ and https://
 We scraped the data from the website and cleaned the data using Pandas in juypter notebook.
 
 
+![70s top 100 scrape](https://user-images.githubusercontent.com/90288887/149627553-98fb2738-bb5b-475b-a97e-15dd88ac2b88.jpg)
+
+
+
+![90s](https://user-images.githubusercontent.com/90288887/149627561-edf827d1-8dd6-4ea0-a946-cef2b2d9d41b.jpg)
+
+
+
+
+
+
+![Billboard_scrape](https://user-images.githubusercontent.com/90288887/149627624-c37446bc-828f-4643-b0f6-e11127a48149.jpg)
+
+
+
+
 Once the data was cleaned we began working on the HTML code to create the website.
+
 
 
 
