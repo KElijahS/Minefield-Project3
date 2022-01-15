@@ -1,7 +1,13 @@
-
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
+from flask_pymongo import PyMongo
+from webdriver_manager.chrome import ChromeDriverManager
+import urllib3
+import selenium
+import scrape
 
 app = Flask(__name__)
+
+mongo = PyMongo(app, uri="mongodb://localhost:27017/top_artist")
 
 # Set up a home route
 @app.route('/')
@@ -16,7 +22,21 @@ def home():
     dataFemaleG = [3,1,0,3,2,3,1,2,0,2,6,7,5,1,0,1,1]
     dataMixed = [0,5,5,1,4,7,14,8,11,12,7,10,14,16,20,16,13]
 
-    return render_template("index.html", labels=labels, values=values, labels2=labels2, dataMale=dataMale, dataFemale=dataFemale, dataMaleG=dataMaleG, dataFemaleG= dataFemaleG, dataMixed=dataMixed, values2=values2)
+    topArtist_data = mongo.db.collection.find_one()
+
+    return render_template("index.html", labels=labels, values=values, labels2=labels2, dataMale=dataMale, dataFemale=dataFemale, dataMaleG=dataMaleG, dataFemaleG= dataFemaleG, dataMixed=dataMixed, values2=values2, topArtist=topArtist_data)
+
+@app.route("/scrape")
+def scraper():
+
+    # Run the scrape function
+    song_data = scrape.scrape_song()
+
+    # Update the Mongo database using update and upsert=True
+    mongo.db.collection.update({}, song_data, upsert=True)
+
+    # redirect back to the home page
+    return redirect("/")
 
 # Boilerplatex
 if __name__ == '__main__':
