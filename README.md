@@ -35,8 +35,9 @@ Once the data was cleaned we began working on the HTML code to create the websit
 
 
 Once the website was up and running we began plottting our charts to tell our visual story.
+<img width="506" alt="image (5)" src="https://user-images.githubusercontent.com/90288887/149628590-08a62a48-caff-4377-baf4-192ffb329955.png">
 
-![image (2)](https://user-images.githubusercontent.com/90288887/149625238-d726af27-d930-463a-89b5-c7d558ebbb77.png)
+
 ![image](https://user-images.githubusercontent.com/90288887/149625243-1d58e32f-bf16-4752-b917-3f3d38118891.png)
 ![image (1)](https://user-images.githubusercontent.com/90288887/149625246-1296bf61-41a1-43be-b83e-b57c8c735463.png)
 
@@ -45,7 +46,18 @@ Once the website was up and running we began plottting our charts to tell our vi
 
 
 Once our charts were completed we began working on completing our website.
-<img width="363" alt="image (4)" src="https://user-images.githubusercontent.com/90288887/149625175-5f045088-c560-44e2-b27c-78dbf0adb22e.png">
+
+
+
+
+
+<img width="267" alt="image (6)" src="https://user-images.githubusercontent.com/90288887/149628628-9f0d5138-e843-4982-92a7-4f1b7ab6d803.png">
+
+
+
+
+
+
 
 #### Conclusion
 This data could be used for multiple reasons. As a fan of music, it was interesting to see the years that female artists did well in the charts as opposed to male artists who usually dominate the field. The charts could be used by music labels or independent artists seeing what listeners love the most to create genre of music around that will sell. In music, the data algorisms run the listener behavior. Overall, we saw the change from the early 70s into the 2000s. Male artists dominated in the 2000s and male groups dominated in the 60s. We see a rise in females in the mid 90s around 1995 females dominated the charts. Currently, Adele is on top of the charts with “Easy on me” that was just released last month. 
