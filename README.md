@@ -1,4 +1,4 @@
-## Billboard Top 100-Project3
+## Billboard Top 100-Project 3
 We chose to study the data provided in the Billboard Top 100 Charts from years 1941-2020 to compare the “Top 100 Songs of Each Decade” according to Billboard Magazine by Gender.
 
 ### History
@@ -7,7 +7,7 @@ Billboard Magazine was founded in 1864 by William H. Donaldson and James H. Henn
 
 
 #### Starting Data Webscrape
-We scraped data from the two websites http://billboardtop100of.com/ and https://www.billboard.com/charts/year-end focusing on the history of the billboard Top 100 chart starting in 1941 and ending in 2020. We focused on 5 focus groups ‘Female’ , ‘Male’, ‘Male Group’, ‘Female Group’, ‘Mixed Group’. There were some years that artists did alot of collaboration and those years fell into the 'Mixed Group category'. In the 90s we noticted the rise of "Male Groups' but we noticed that 'Male artists dominated the charts throughout the years. In 2005, we saw the rise in 'Female artists' which we hope to see in the future years. Adele "Easy on me is currrently dominating the charts in the No.1 spot.
+We scraped data from the two websites http://billboardtop100of.com/ and https://www.billboard.com/charts/year-end focusing on the history of the "Billboard Top 100" chart starting in 1941 and ending in 2020. We focused on 5 focus groups ‘Female’ , ‘Male’, ‘Male Group’, ‘Female Group’, ‘Mixed Group’. There were some years that artists did alot of collaboration and those years fell into the 'Mixed Group category'. In the 70s we noticted that 'Male Groups' dominated the charts. We also noticed that 'Male Artists' dominated the charts throughout the years. In 2010, we noticed a rise in the 'Mixed Group' category this was due to features where male and female artists collaborted on music together. Throughout the 90s we saw a peak in 'Male Group' but female group had a small rise but neither dominated like the solo artists or mixed group category. In 1995, we saw the rise in 'Female artists' in which we hope to see more female artist top the charts in the future years. Adele "Easy on me" is currrently dominating the charts in the No.1 spot prior to that Mariah Carey dominated the charts during christmas time with "ALL I WANT".
 
 ##### CREATING THE DATA VISUALIZATION
 We scraped the data from the website and cleaned the data using Pandas in juypter notebook.
