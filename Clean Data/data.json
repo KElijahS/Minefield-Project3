@@ -1,0 +1,155 @@
+{
+    "year1941":
+        {
+            "Year": "1941",
+            "Female": 3,
+            "FemaleGroup": 3,
+            "Male": 64,
+            "MaleGroup": 10,
+            "MixedGroup": 0
+        },
+    "year1945":   
+        {
+            "Year": "1945",
+            "Female": 6,
+            "FemaleGroup": 1,
+            "Male": 64,
+            "MaleGroup": 4,
+            "MixedGroup": 5
+        },
+    "year1950":
+        {
+            "Year": "1950",
+            "Female": 5,
+            "FemaleGroup": 0,
+            "Male": 14,
+            "MaleGroup": 6,
+            "MixedGroup": 5
+        },
+    "year1955":
+        {
+            "Year": "1955",
+            "Female": 5,
+            "FemaleGroup": 3,
+            "Male": 16,
+            "MaleGroup": 5,
+            "MixedGroup": 1
+        },
+    "year1960":
+        {
+            "Year": "1960",
+            "Female": 14,
+            "FemaleGroup": 2,
+            "Male": 63,
+            "MaleGroup": 17,
+            "MixedGroup": 4
+        },
+    "year1965":
+        {
+            "Year": "1965",
+            "Female": 11,
+            "FemaleGroup": 3,
+            "Male": 32,
+            "MaleGroup": 47,
+            "MixedGroup": 7
+        },
+    "year1970":
+        {
+            "Year": "1970",
+            "Female": 6,
+            "FemaleGroup": 1,
+            "Male": 27,
+            "MaleGroup": 52,
+            "MixedGroup": 14
+        },
+    "year1975":
+        {
+            "Year": "1975",
+            "Female": 14,
+            "FemaleGroup": 2,
+            "Male": 37,
+            "MaleGroup": 39,
+            "MixedGroup": 8
+        },
+    "year1980":
+        {
+            "Year": "1980",
+            "Female": 15,
+            "FemaleGroup": 0,
+            "Male": 47,
+            "MaleGroup": 27,
+            "MixedGroup": 11
+        },
+    "year1985":
+        {
+            "Year": "1985",
+            "Female": 20,
+            "FemaleGroup": 2,
+            "Male": 34,
+            "MaleGroup": 32,
+            "MixedGroup": 12
+        },
+    "year1990":
+        {
+            "Year": "1990",
+            "Female": 26,
+            "FemaleGroup": 6,
+            "Male": 35,
+            "MaleGroup": 26,
+            "MixedGroup": 7
+        },
+    "year1995":
+        {
+            "Year": "1995",
+            "Female": 29,
+            "FemaleGroup": 7,
+            "Male": 22,
+            "MaleGroup": 32,
+            "MixedGroup": 10
+        },
+    "year2000":
+        {
+            "Year": "2000",
+            "Female": 26,
+            "FemaleGroup": 5,
+            "Male": 33,
+            "MaleGroup": 22,
+            "MixedGroup": 14
+        },
+    "year2005":
+        {
+            "Year": "2005",
+            "Female": 21,
+            "FemaleGroup": 1,
+            "Male": 39,
+            "MaleGroup": 23,
+            "MixedGroup": 16
+        },
+    "year2010":
+        {
+            "Year": "2010",
+            "Female": 26,
+            "FemaleGroup": 0,
+            "Male": 42,
+            "MaleGroup": 12,
+            "MixedGroup": 20
+        },
+    "year2015":
+        {
+            "Year": "2015",
+            "Female": 25,
+            "FemaleGroup": 1,
+            "Male": 49,
+            "MaleGroup": 9,
+            "MixedGroup": 16
+        },
+    "year2020":
+        {
+            "Year": "2020",
+            "Female": 17,
+            "FemaleGroup": 1,
+            "Male": 67,
+            "MaleGroup": 2,
+            "MixedGroup": 13
+        }
+}

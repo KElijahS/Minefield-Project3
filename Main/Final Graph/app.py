@@ -7,6 +7,7 @@ import scrape
 
 app = Flask(__name__)
 
+data_mongo = PyMongo(app, uri="mongodb://localhost:27017/billboard_data")
 mongo = PyMongo(app, uri="mongodb://localhost:27017/top_artist")
 
 # Set up a home route
