@@ -67,4 +67,5 @@ Once our charts were completed we began working on completing our website.
 #### Conclusion
 This data could be used for multiple reasons. As a fan of music, it was interesting to see the years that female artists did well in the charts as opposed to male artists who usually dominate the field. The charts could be used by music labels or independent artists seeing what listeners love the most to create genre of music around that will sell. In music, the data algorisms run the listener behavior. Overall, we saw the change from the early 70s into the 2000s. Male artists dominated in the 2000s and male groups dominated in the 60s. We see a rise in females in the mid 90s around 1995 females dominated the charts. Currently, Adele is on top of the charts with “Easy on me” that was just released last month. 
 
-[Final-Report.docx](https://github.com/KElijahS/Minefield-Project3/files/7875132/Final-Report.docx)
+[Final-Report.docx](https://github.com/KElijahS/Minefield-Project3/files/7875440/Final-Report.docx)
+
