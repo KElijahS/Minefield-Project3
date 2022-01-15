@@ -35,9 +35,14 @@ Once the data was cleaned we began working on the HTML code to create the websit
 
 
 Once the website was up and running we began plottting our charts to tell our visual story.
+
 ![image (2)](https://user-images.githubusercontent.com/90288887/149625238-d726af27-d930-463a-89b5-c7d558ebbb77.png)
 ![image](https://user-images.githubusercontent.com/90288887/149625243-1d58e32f-bf16-4752-b917-3f3d38118891.png)
 ![image (1)](https://user-images.githubusercontent.com/90288887/149625246-1296bf61-41a1-43be-b83e-b57c8c735463.png)
+
+
+![Bar plot](https://user-images.githubusercontent.com/90288887/149627843-cbcf0e5d-4886-4317-8457-093c4d164fcc.jpg)
+
 
 Once our charts were completed we began working on completing our website.
 <img width="363" alt="image (4)" src="https://user-images.githubusercontent.com/90288887/149625175-5f045088-c560-44e2-b27c-78dbf0adb22e.png">
